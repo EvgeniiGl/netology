@@ -1,3 +1,6 @@
 #readme.md
 
-игнорируются файлы ide и папка sysadm-homeworks с заданиями
+игнорируются папки .idea и sysadm-homeworks
+
+игнорируются файлы с расширением .iml
+
