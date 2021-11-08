@@ -35,4 +35,4 @@ Cleanup after v0.12.23 release 225466bc
   
 7. Кто автор функции synchronizedWriters?
 
-не нашел данную функцию
+Martin Atkins
