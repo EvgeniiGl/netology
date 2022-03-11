@@ -67,8 +67,22 @@ cat $cert_data | jq -r .data.issuing_ca >> /etc/nginx/ssl/test.example.com.crt
 cat $cert_data | jq -r .data.private_key > /etc/nginx/ssl/test.example.com.key
 
 sudo service nginx restart
+
+rm $cert_data
 ```
 
 10. Поместите скрипт в crontab, чтобы сертификат обновлялся какого-то числа каждого месяца в удобное для вас время.
 
+```
+#раз в месяц
 1 0 1 * * /home/vagrant/update_certificate.sh
+```
+
+```
+#раз в минуту для эксперимента
+1 * * * * /home/vagrant/update_certificate.sh
+```
+
+![vault](./Screenshot 2022-03-11 at 12.13.14.png)
+
+
